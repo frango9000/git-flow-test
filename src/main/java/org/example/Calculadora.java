@@ -32,7 +32,9 @@ public class Calculadora {
                 break;
             case MULTIPLICACION:
                 resultado = multiplicar();
+                break;
             case DIVISION:
+                resultado = dividir();
                 break;
         }
         return resultado;
@@ -48,6 +50,10 @@ public class Calculadora {
 
     private int multiplicar() {
         return num1 * num2;
+    }
+
+    private int dividir() {
+        return num1 / num2;
     }
 
     public enum Operacion {
