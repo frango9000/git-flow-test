@@ -36,6 +36,9 @@ public class Calculadora {
             case DIVISION:
                 resultado = dividir();
                 break;
+            case ELEVAR:
+                resultado = elevar();
+                break;
         }
         return resultado;
     }
@@ -52,6 +55,10 @@ public class Calculadora {
         return num1 * num2;
     }
 
+    private int elevar() {
+        return (int) Math.pow(num1, num2);
+    }
+
     private int dividir() {
         return num1 / num2;
     }
@@ -60,6 +67,7 @@ public class Calculadora {
         SUMA,
         RESTA,
         MULTIPLICACION,
-        DIVISION
+        DIVISION,
+        ELEVAR
     }
 }

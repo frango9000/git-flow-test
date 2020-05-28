@@ -18,6 +18,8 @@ public class App {
         System.out.println("18: " + mult);
         int div = calculadora.calcular(Operacion.DIVISION);
         System.out.println("2: " + div);
+        int ele = calculadora.calcular(Operacion.ELEVAR);
+        System.out.println("216: " + ele);
 
     }
 }
