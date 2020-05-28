@@ -28,6 +28,7 @@ public class Calculadora {
                 resultado = suma();
                 break;
             case RESTA:
+                resultado = resta();
                 break;
             case MULTIPLICACION:
                 resultado = multiplicar();
@@ -41,7 +42,13 @@ public class Calculadora {
         return num1 + num2;
     }
 
-    private int multiplicar(){return num1 * num2;}
+    private int resta() {
+        return num1 - num2;
+    }
+
+    private int multiplicar() {
+        return num1 * num2;
+    }
 
     public enum Operacion {
         SUMA,
