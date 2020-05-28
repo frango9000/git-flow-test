@@ -25,6 +25,7 @@ public class Calculadora {
         int resultado = 0;
         switch (operacion) {
             case SUMA:
+                resultado = suma();
                 break;
             case RESTA:
                 break;
@@ -34,6 +35,10 @@ public class Calculadora {
                 break;
         }
         return resultado;
+    }
+
+    private int suma() {
+        return num1 + num2;
     }
 
     public enum Operacion {
