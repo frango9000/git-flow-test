@@ -22,5 +22,7 @@ public class App {
         System.out.println("216: " + ele);
         int mod = calculadora.calcular(Operacion.MODULO);
         System.out.println("0: " + mod);
+        int max = calculadora.calcular(Operacion.MAXIMO);
+        System.out.println("6: " + max);
     }
 }

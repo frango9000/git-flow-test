@@ -42,6 +42,9 @@ public class Calculadora {
             case MINIMO:
                 resultado = minimo();
                 break;
+            case MAXIMO:
+                resultado=maximo();
+                break;
             case MODULO:
                 resultado=modulo();
                 break;
@@ -77,6 +80,10 @@ public class Calculadora {
         return Math.min(num1,num2);
     }
 
+    private int maximo() {
+        return Math.max(num1,num2);
+    }
+
     public enum Operacion {
         SUMA,
         RESTA,
@@ -84,6 +91,7 @@ public class Calculadora {
         DIVISION,
         ELEVAR,
         MODULO,
-        MINIMO;
+        MINIMO,
+        MAXIMO
     }
 }
