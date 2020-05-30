@@ -20,6 +20,7 @@ public class App {
         System.out.println("2: " + div);
         int ele = calculadora.calcular(Operacion.ELEVAR);
         System.out.println("216: " + ele);
-
+        int mod = calculadora.calcular(Operacion.MODULO);
+        System.out.println("0: " + mod);
     }
 }

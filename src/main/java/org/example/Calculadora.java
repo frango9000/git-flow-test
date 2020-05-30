@@ -39,6 +39,9 @@ public class Calculadora {
             case ELEVAR:
                 resultado = elevar();
                 break;
+            case MODULO:
+                resultado=modulo();
+                break;
         }
         return resultado;
     }
@@ -63,11 +66,16 @@ public class Calculadora {
         return num1 / num2;
     }
 
+    private int modulo() {
+        return num1 % num2;
+    }
+
     public enum Operacion {
         SUMA,
         RESTA,
         MULTIPLICACION,
         DIVISION,
-        ELEVAR
+        ELEVAR,
+        MODULO
     }
 }
