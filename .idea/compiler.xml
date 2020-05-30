@@ -6,7 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="git-flow-test2" />
+        <module name="git-flow-test3" />
         <module name="git-flow-test" />
       </profile>
     </annotationProcessing>
