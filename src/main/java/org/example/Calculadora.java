@@ -5,6 +5,9 @@ public class Calculadora {
     private int num1 = 0;
     private int num2 = 0;
 
+    /**
+     * Logica de la Calculadora
+     */
     public Calculadora() {
     }
 
@@ -43,10 +46,10 @@ public class Calculadora {
                 resultado = minimo();
                 break;
             case MAXIMO:
-                resultado=maximo();
+                resultado = maximo();
                 break;
             case MODULO:
-                resultado=modulo();
+                resultado = modulo();
                 break;
         }
         return resultado;
@@ -77,11 +80,11 @@ public class Calculadora {
     }
 
     private int minimo() {
-        return Math.min(num1,num2);
+        return Math.min(num1, num2);
     }
 
     private int maximo() {
-        return Math.max(num1,num2);
+        return Math.max(num1, num2);
     }
 
     public enum Operacion {

@@ -3,12 +3,12 @@ package org.example;
 import org.example.Calculadora.Operacion;
 
 /**
- * Hello world!
+ * Calculadora!
  */
 public class App {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        System.out.println("Calculadora Improvisada: ");
         Calculadora calculadora = new Calculadora(6, 3);
         int suma = calculadora.calcular(Operacion.SUMA);
         System.out.println("9: " + suma);
