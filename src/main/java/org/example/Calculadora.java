@@ -39,6 +39,9 @@ public class Calculadora {
             case ELEVAR:
                 resultado = elevar();
                 break;
+            case MINIMO:
+                resultado = minimo();
+                break;
             case MODULO:
                 resultado=modulo();
                 break;
@@ -70,12 +73,17 @@ public class Calculadora {
         return num1 % num2;
     }
 
+    private int minimo() {
+        return Math.min(num1,num2);
+    }
+
     public enum Operacion {
         SUMA,
         RESTA,
         MULTIPLICACION,
         DIVISION,
         ELEVAR,
-        MODULO
+        MODULO,
+        MINIMO;
     }
 }
